@@ -25,27 +25,28 @@
 
   <body>
 
-<div class="section values">
-  <div class="container">
-    <div class="row">
-      <div class="three column value">
-
-      </div>
-      <div class="nine column value">
-        <h2 class="value-heading"> TEDTalks Feed: </h2>
-        <p class="value-description"><a href="http://feeds.feedburner.com/tedtalks_video"> Media RSS feed from FeedBurner</a></p>
+    <!-- header displaying image and title -->
+    <div class="section values">
+      <div class="container">
+        <div class="row">
+          <div class="three column value">
+          </div>
+          <div class="nine column value automargin">
+            <h2 class="value-heading"> TEDTalks Feed: </h2>
+            <p class="value-description"><a href="http://feeds.feedburner.com/tedtalks_video"> Media RSS feed from FeedBurner</a></p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     <br/>
+
+    <!-- table that will display feed data -->
     <div class="container">
       <div class="row">
         <div class="twelve columns">
           <table  class="u-full-width">
             <thead>
               <tr>
-
                 <th>Title</th>
                 <th>Author</th>
                 <th>Date Published</th>
@@ -55,17 +56,17 @@
             <tbody id="feedTableBody">
             </tbody>
           </table>
-      </div>
         </div>
+      </div>
     </div>
 
+    <!--modal dynamically created here-->
     <div id="buildModal"></div>
 
     <script type="text/javascript">
       google.load("feeds", "1");
       google.setOnLoadCallback(initialize);
     </script>
-
   </body>
 
 </html>

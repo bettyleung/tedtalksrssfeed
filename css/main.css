@@ -31,9 +31,8 @@
   border-color: #E6E6E6;
 }
 
-hr{
-  margin-top: -1rem ;
-  margin-bottom: .8rem;
+.automargin{
+  margin-left: auto;
 }
 
 
@@ -61,18 +60,15 @@ table{
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content */
+/* Modal */
 .modal-content {
     position: relative;
     background-color: #fefefe;
-    /*margin: auto;*/
     margin-top: 0%;
     margin-bottom: 50%;
     margin-left: 25%;
     margin-right: 10%;
-
     padding: 0;
-
     border: 1px solid #888;
     width: 50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -87,9 +83,12 @@ table{
   text-align: center;
 }
 
+.resizeimg{
+  height: 200px;
+  overflow: hidden;
+}
 
-
-/* Add Animation */
+/*Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
@@ -100,7 +99,7 @@ table{
     to {top:0; opacity:1}
 }
 
-/* The Close Button */
+/* Close Button */
 .close {
     color: black;
     float: right;
@@ -132,9 +131,4 @@ table{
     padding: 2px 16px;
     background-color: #5cb85c;
     color: white;
-}
-
-.resizeimg{
-  height: 200px;
-  overflow: hidden;
 }
