@@ -1,0 +1,140 @@
+
+/*The header section*/
+.section {
+  padding: 20rem 0 20rem;
+  text-align: center;
+}
+
+.values {
+  background-image: url('../img/pic2.png');
+  background-size:100% 100%;
+  color: #fff;
+
+}
+.value-heading {
+  margin-bottom: .3rem;
+  font-size: 50px;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+  font-size: 17px;
+}
+
+.header {
+    margin-top: 10rem;
+     text-align: center;
+}
+
+.transparentStyle{
+  background-color:transparent;
+  border-color: #E6E6E6;
+}
+
+hr{
+  margin-top: -1rem ;
+  margin-bottom: .8rem;
+}
+
+
+small{
+  font-size: 20px;
+}
+
+table{
+  table-layout:fixed;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    /*margin: auto;*/
+    margin-top: 0%;
+    margin-bottom: 50%;
+    margin-left: 25%;
+    margin-right: 10%;
+
+    padding: 0;
+
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.title{
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #FFFFFF;
+    color: white;
+}
+
+.modal-body {
+  padding-top: 20px;
+  margin-right: 110px;
+  margin-left: 120px;
+  margin-left: 120px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.resizeimg{
+  height: 200px;
+  overflow: hidden;
+}

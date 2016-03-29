@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Javascript–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="./js/feed.js"></script>
+
+    <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- Basic Page Needs  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+
+    <!-- Mobile Specific Metas  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+
+<div class="section values">
+  <div class="container">
+    <div class="row">
+      <div class="three column value">
+
+      </div>
+      <div class="nine column value">
+        <h2 class="value-heading"> TEDTalks Feed: </h2>
+        <p class="value-description"><a href="http://feeds.feedburner.com/tedtalks_video"> Media RSS feed from FeedBurner</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <br/>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <table  class="u-full-width">
+            <thead>
+              <tr>
+
+                <th>Title</th>
+                <th>Author</th>
+                <th>Date Published</th>
+                <th><center>Detail View</center></th>
+              </tr>
+            </thead>
+            <tbody id="feedTableBody">
+            </tbody>
+          </table>
+      </div>
+        </div>
+    </div>
+
+    <div id="buildModal"></div>
+
+    <script type="text/javascript">
+      google.load("feeds", "1");
+      google.setOnLoadCallback(initialize);
+    </script>
+
+  </body>
+
+</html>
